@@ -40,8 +40,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-ENV PORT=8080
+ENV PORT=4000
 EXPOSE ${PORT}
 
 ENTRYPOINT ["npm", "start"]
-
