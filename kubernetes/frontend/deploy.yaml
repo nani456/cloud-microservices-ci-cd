@@ -28,7 +28,7 @@ spec:
         app.kubernetes.io/component: frontend
         app.kubernetes.io/name: opentelemetry-demo-frontend
     spec:
-      serviceAccountName: opentelemetry-demo
+    #  serviceAccountName: opentelemetry-demo
       containers:
         - name: frontend
           image: 'naginikandula/frontend:dev'
